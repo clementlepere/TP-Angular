@@ -61,14 +61,14 @@
                         <span class="text-note">Prénom</span>
                         <input type="text" />
                     </div>
-                    <div class="type">
+                    <div ng-show="show" class="type">
                         <span class="text-note">Adresse</span>
                         <div>
                             <input type="text" />
                         </div>
                         <button class="btn btn-default add">Ajouter une autre ligne d'adresse</button>
                     </div>
-                    <div class="type">
+                    <div  ng-show="show" class="type">
                         <span class="text-note">Code Postal</span>
                         <input type="number" />
                     </div>
@@ -76,7 +76,7 @@
                     <button class="btn btn-success done">Allez hop, j'ai très faim !</button>
                 </div>
                 <p><i>Les prix sont affichés pour 1 pizza entière.</i></p>
-                <button class="btn btn-success next-step">Etape suivante</button>
+                <button class="btn btn-success next-step" ng-click="show=true" ng-hide="show" >Etape suivante</button>
             </div>
             <div>
                 <h3>Merci PRENOM !<br/>C'est livré dans 15 minutes.</h3>
