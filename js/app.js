@@ -1,5 +1,3 @@
-var pizza = angular.module('pizza', []);
-
 pizza.controller('pizzaController', function($scope){
 
 	$scope.types = types;
