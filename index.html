@@ -14,6 +14,7 @@
 
     <script src="js/variables.js"></script>
     <script src="libs/angular.min.js"></script>
+    <script src="js/app.js"></script>
 
   </head>
   <body ng-app="pizza">
@@ -31,10 +32,10 @@
                 <div class="type pizza-type">
                     <span class="text-note">Recette</span>
                     <div>
-                        <label>
+                        <label ng-repeat= "type in types" >
                             <input type="radio" name="type" />
-                            TYPE
-                            <span class="description">DESCRIPTION</span>
+                            {{type.name}}({{type.price}}€)
+                            <span class="description">{{type.description.body}}</span>
                         </label>
                     </div>
                 </div>
